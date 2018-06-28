@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			      crossorigin="anonymous"></script>
+    <title>exercice_1</title>
+  </head>
+  <body>
+    <input type="text" id="text" value="0"/>
+    <button type="button" id='button'>Clique</button>
+  <script>
+      var counter = 0;
+      $(document).ready(function () {
+        $('#button').click(function () {
+          counter++;
+        $('#text').val(counter);
+      })
+    });
+  </script>
+  </body>
+</html>
